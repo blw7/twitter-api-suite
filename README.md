@@ -13,7 +13,7 @@ Read the [official Twitter documentation](https://developer.twitter.com/en/docs)
 
 # Installation
 
-```
+```javascript
 npm install twitter-api-suite --save
 ```
 
@@ -23,7 +23,7 @@ The package needs to be configured with OAuth tokens.
 You need a Twitter developer account to create apps and generate tokens.
 [Apply here](https://developer.twitter.com/en/apply-for-access) if you don't have one yet.
 
-```
+```javascript
 const Twitter = require('twitter-api-suite');
 
 const twitter = new Twitter({
@@ -36,7 +36,7 @@ const twitter = new Twitter({
 
 Or, when configuring the package with an application-only context:
 
-```
+```javascript
 const Twitter = require('twitter-api-suite');
 
 const twitter = new Twitter({
