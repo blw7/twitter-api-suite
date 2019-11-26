@@ -1,0 +1,26 @@
+{
+	"name": "twttr-api",
+	"version": "0.0.1",
+	"description": "Twitter API client for Node.js",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/blw7/twttr-api.git"
+	},
+	"keywords": [
+		"twitter",
+		"api",
+		"twitterapi",
+		"rest",
+		"oauth"
+	],
+	"author": "Benoit Lewandowski",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/blw7/twttr-api/issues"
+	},
+	"homepage": "https://github.com/blw7/twttr-api#readme",
+	"dependencies": {
+		"request": "^2.88.0"
+	}
+}
