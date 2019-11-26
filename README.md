@@ -6,18 +6,18 @@ This library provides convenient access to the Twitter API from applications wri
 It only supports the REST API at this moment. Support for Streaming, Enterprise and Ads APIs will be added soon.
 
 
-### Documentation
+# Documentation
 
 Read the [official Twitter documentation](https://developer.twitter.com/en/docs) to learn more about API endpoints.
 
 
-### Installation
+# Installation
 
 ```
 npm install twitter-api-suite --save
 ```
 
-### Usage
+# Usage
 
 The package needs to be configured with OAuth tokens.
 You need a Twitter developer account to create apps and generate tokens.
