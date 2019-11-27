@@ -51,7 +51,7 @@ const twitter = new Twitter({
 # Methods
 
 
-## REST API Requests
+### REST API Requests
 
 #### `twitter.get(endpoint, params, append_response)`
 
