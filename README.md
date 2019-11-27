@@ -53,19 +53,19 @@ const twitter = new Twitter({
 
 ### REST API Requests
 
-#### `twitter.get(endpoint, params, append_response)`
+### `twitter.get(endpoint, params, append_response)`
 
   Performs a GET request to the Twitter API.
 
-#### `twitter.post(endpoint, params, append_response)`
+### `twitter.post(endpoint, params, append_response)`
 
   Performs a POST request to the Twitter API.
 
-#### `twitter.put(endpoint, params, append_response)`
+### `twitter.put(endpoint, params, append_response)`
 
   Performs a PUT request to the Twitter API.
 
-#### `twitter.del(endpoint, params, append_response)`
+### `twitter.del(endpoint, params, append_response)`
 
   Performs a DELETE request to the Twitter API.
 
