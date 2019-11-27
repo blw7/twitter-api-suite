@@ -48,50 +48,53 @@ const twitter = new Twitter({
 });
 ```
 
-## Methods
+# Methods
 
 
-### REST API Requests
+## REST API Requests
 
 #### `twitter.get(endpoint, params, append_response)`
 
- Performs a GET request to the Twitter API.
+  Performs a GET request to the Twitter API.
 
 #### `twitter.post(endpoint, params, append_response)`
 
- Performs a POST request to the Twitter API.
+  Performs a POST request to the Twitter API.
 
 #### `twitter.put(endpoint, params, append_response)`
 
- Performs a PUT request to the Twitter API.
+  Performs a PUT request to the Twitter API.
 
 #### `twitter.del(endpoint, params, append_response)`
 
- Performs a DELETE request to the Twitter API.
+  Performs a DELETE request to the Twitter API.
 
 
 ### Parameters
 
 * **endpoint**
+
   API endpoint to call. For instance `users/show`. List of all endpoints can be found [here](https://developer.twitter.com/en/docs/api-reference-index).
 
 
 
 * **params** (optional)
+
   Parameters to pass to the request.
 
 
 
 * **append_response** (optional)
+
   Boolean, defaults to `false`. If set to `true`, data returned in Promises has an additional **`_response`** property corresponding to the raw HTTP response received from Twitter, including `x-rate-limit-*` headers.
 
 
-### Media upload
+## Media upload
 
 
 #### `twitter.upload(params, append_response)`
 
-Implements the full logic (INIT, APPEND, FINALIZE, STATUS) of uploading media files through `POST media/upload (chunked)`. The `params` object must has `media_path` which is the absolute path to the media file you want to upload. When uploading large files such as videos, the function returns when the media has been processed by Twitter (`succeeded` or `failed`).
+Implements the full logic (INIT, APPEND, FINALIZE, STATUS) of uploading media files through `POST media/upload (chunked)`. The `params` object must have `media_path` which is the absolute path to the media file you want to upload. When uploading large files such as videos, the function returns when the media has been processed by Twitter (`succeeded` or `failed`).
 
 ```javascript
 const params = {
