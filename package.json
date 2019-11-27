@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/blw7/twttr-api.git"
+		"url": "git+https://github.com/blw7/twitter-api-suite.git"
 	},
 	"keywords": [
 		"twitter",
@@ -17,9 +17,9 @@
 	"author": "Benoit Lewandowski",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/blw7/twttr-api/issues"
+		"url": "https://github.com/blw7/twitter-api-suite/issues"
 	},
-	"homepage": "https://github.com/blw7/twttr-api#readme",
+	"homepage": "https://github.com/blw7/twitter-api-suite#readme",
 	"dependencies": {
 		"request": "^2.88.0"
 	}
