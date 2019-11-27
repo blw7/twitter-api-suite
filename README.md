@@ -66,20 +66,39 @@ const twitter = new Twitter({
 
 * **append_response** (optional)
 
-  Boolean, defaults to `false`. If set to `true`, data returned in Promises has an additional **`_response`** property corresponding to the raw HTTP response received from Twitter, include `x-rate-limit-*` headers.
+  Boolean, defaults to `false`. If set to `true`, data returned in Promises has an additional **`_response`** property corresponding to the raw HTTP response received from Twitter, including `x-rate-limit-*` headers.
 
 
+### `twitter.post(endpoint, params, append_response)`
 
-### `twitter.get(endpoint, [params], [append_response])`
+Performs a POST request to the Twitter API.
 
-### `twitter.post(endpoint, [params], [append_response])`
+### `twitter.get(endpoint, params, append_response)`
 
-### `twitter.put(endpoint, [params], [append_response])`
+Performs a GET request to the Twitter API.
 
-### `twitter.del(endpoint, [params], [append_response])`
+### `twitter.put(endpoint, params, append_response)`
 
-### `twitter.upload(params, [append_response])`
+Performs a PUT request to the Twitter API.
 
+### `twitter.del(endpoint, params, append_response)`
+
+Performs a DELETE request to the Twitter API.
+
+### `twitter.upload(params, append_response)`
+
+Implements the full logic (INIT, APPEND, FINALIZE, STATUS) of uploading media files through `POST media/upload (chunked)`. The `params` object must has `media_path` which is the absolute path to the media file you want to upload. When uploading large files such as videos, the function returns when the media has been processed by Twitter (`succeeded` or `failed`).
+
+```javascript
+const params = {
+    media_path: 'absolute/path/to/file.mp4'
+}
+```
+
+Supported types and limits:
+* **Image**: 5MB (png, jpg, webp)
+* **Video**: 512MB (mp4)
+* **GIF**: 15MB (gif)
 
 
 ## Contributing
