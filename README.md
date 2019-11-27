@@ -69,21 +69,27 @@ const twitter = new Twitter({
   Boolean, defaults to `false`. If set to `true`, data returned in Promises has an additional **`_response`** property corresponding to the raw HTTP response received from Twitter, including `x-rate-limit-*` headers.
 
 
-### `twitter.post(endpoint, params, append_response)`
+### REST API Requests
 
-Performs a POST request to the Twitter API.
-
-### `twitter.get(endpoint, params, append_response)`
+###`twitter.get(endpoint, params, append_response)`
 
 Performs a GET request to the Twitter API.
 
-### `twitter.put(endpoint, params, append_response)`
+###`twitter.post(endpoint, params, append_response)`
+
+Performs a POST request to the Twitter API.
+
+###`twitter.put(endpoint, params, append_response)`
 
 Performs a PUT request to the Twitter API.
 
-### `twitter.del(endpoint, params, append_response)`
+###`twitter.del(endpoint, params, append_response)`
 
 Performs a DELETE request to the Twitter API.
+
+
+### Media upload
+
 
 ### `twitter.upload(params, append_response)`
 
@@ -96,9 +102,9 @@ const params = {
 ```
 
 Supported types and limits:
-* **Image**: 5MB (png, jpg, webp)
-* **Video**: 512MB (mp4)
-* **GIF**: 15MB (gif)
+* **Image**: 5MB (.png, .jpg, .jpeg, .webp)
+* **Video**: 512MB (.mp4)
+* **GIF**: 15MB (.gif)
 
 
 ## Contributing
