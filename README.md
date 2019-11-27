@@ -107,6 +107,10 @@ Supported types and limits:
 * **GIF**: 15MB (.gif)
 
 
+-------
+
+
+
 ## Contributing
 
 Contributions for new features, enhancements and bug fixes are welcome. When contributing to this repository, please first discuss the change you wish to make via issue or email before you submit a pull request.
