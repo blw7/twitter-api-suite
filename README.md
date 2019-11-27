@@ -50,15 +50,32 @@ const twitter = new Twitter({
 
 ## Methods
 
-### `get(endpoint, [params], [append_response])`
+### Parameters
 
-### `post(endpoint, [params], [append_response])`
+* **endpoint**
 
-### `put(endpoint, [params], [append_response])`
+API endpoint to call. For instance `users/show`. List of all endpoints can be found [here](https://developer.twitter.com/en/docs/api-reference-index).
 
-### `del(endpoint, [params], [append_response])`
 
-### `upload(params, [append_response])`
+* **params** (optional)
+
+Parameters to pass to the request.
+
+
+* **append_response** (optional)
+
+Boolean, default to `false`. If set to `true`, returned data in all promises will have an additional **`_response`** property corresponding to the raw HTTP response received from Twitter.
+
+
+### `twitter.get(endpoint, [params], [append_response])`
+
+### `twitter.post(endpoint, [params], [append_response])`
+
+### `twitter.put(endpoint, [params], [append_response])`
+
+### `twitter.del(endpoint, [params], [append_response])`
+
+### `twitter.upload(params, [append_response])`
 
 ## Contributing
 
