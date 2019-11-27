@@ -66,7 +66,7 @@ const twitter = new Twitter({
 
 * **append_response** (optional)
 
-  Boolean, default to `false`. If set to `true`, data returned in Promises has an additional **`_response`** property corresponding to the raw HTTP response received from Twitter.
+  Boolean, defaults to `false`. If set to `true`, data returned in Promises has an additional **`_response`** property corresponding to the raw HTTP response received from Twitter, include `x-rate-limit-*` headers.
 
 
 
@@ -79,6 +79,8 @@ const twitter = new Twitter({
 ### `twitter.del(endpoint, [params], [append_response])`
 
 ### `twitter.upload(params, [append_response])`
+
+
 
 ## Contributing
 
