@@ -48,17 +48,17 @@ const twitter = new Twitter({
 });
 ```
 
-### Methods
+## Methods
 
-#### `get(endpoint, [params], [append_response])`
+### `get(endpoint, [params], [append_response])`
 
-#### `post(endpoint, [params], [append_response])`
+### `post(endpoint, [params], [append_response])`
 
-#### `put(endpoint, [params], [append_response])`
+### `put(endpoint, [params], [append_response])`
 
-#### `del(endpoint, [params], [append_response])`
+### `del(endpoint, [params], [append_response])`
 
-#### `upload(params, [append_response])`
+### `upload(params, [append_response])`
 
 ## Contributing
 
