@@ -73,19 +73,16 @@ const twitter = new Twitter({
 ### Parameters
 
 * **endpoint**
-
   API endpoint to call. For instance `users/show`. List of all endpoints can be found [here](https://developer.twitter.com/en/docs/api-reference-index).
 
 
 
 * **params** (optional)
-
   Parameters to pass to the request.
 
 
 
 * **append_response** (optional)
-
   Boolean, defaults to `false`. If set to `true`, data returned in Promises has an additional **`_response`** property corresponding to the raw HTTP response received from Twitter, including `x-rate-limit-*` headers.
 
 
