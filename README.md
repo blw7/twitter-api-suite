@@ -52,19 +52,22 @@ const twitter = new Twitter({
 
 ### Parameters
 
-* **endpoint**
+**endpoint**
 
 API endpoint to call. For instance `users/show`. List of all endpoints can be found [here](https://developer.twitter.com/en/docs/api-reference-index).
 
 
-* **params** (optional)
+
+**params** (optional)
 
 Parameters to pass to the request.
 
 
-* **append_response** (optional)
 
-Boolean, default to `false`. If set to `true`, returned data in all promises will have an additional **`_response`** property corresponding to the raw HTTP response received from Twitter.
+**append_response** (optional)
+
+Boolean, default to `false`. If set to `true`, data returned in Promises has an additional **`_response`** property corresponding to the raw HTTP response received from Twitter.
+
 
 
 ### `twitter.get(endpoint, [params], [append_response])`
