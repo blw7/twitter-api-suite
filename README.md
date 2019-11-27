@@ -71,27 +71,27 @@ const twitter = new Twitter({
 
 ### REST API Requests
 
-###`twitter.get(endpoint, params, append_response)`
+#### `twitter.get(endpoint, params, append_response)`
 
-Performs a GET request to the Twitter API.
+ Performs a GET request to the Twitter API.
 
-###`twitter.post(endpoint, params, append_response)`
+#### `twitter.post(endpoint, params, append_response)`
 
-Performs a POST request to the Twitter API.
+ Performs a POST request to the Twitter API.
 
-###`twitter.put(endpoint, params, append_response)`
+#### `twitter.put(endpoint, params, append_response)`
 
-Performs a PUT request to the Twitter API.
+ Performs a PUT request to the Twitter API.
 
-###`twitter.del(endpoint, params, append_response)`
+#### `twitter.del(endpoint, params, append_response)`
 
-Performs a DELETE request to the Twitter API.
+ Performs a DELETE request to the Twitter API.
 
 
 ### Media upload
 
 
-### `twitter.upload(params, append_response)`
+#### `twitter.upload(params, append_response)`
 
 Implements the full logic (INIT, APPEND, FINALIZE, STATUS) of uploading media files through `POST media/upload (chunked)`. The `params` object must has `media_path` which is the absolute path to the media file you want to upload. When uploading large files such as videos, the function returns when the media has been processed by Twitter (`succeeded` or `failed`).
 
