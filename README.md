@@ -108,6 +108,40 @@ Supported types and limits:
 * **GIF**: 15MB (.gif)
 
 
+## Example
+
+Every method returns a chainable promise.
+
+```javascript
+const Twitter = require('twitter-api-suite');
+
+const twitter = new Twitter({
+    consumer_key: process.env.CONSUMER_KEY,
+    consumer_secret: process.env.CONSUMER_SECRET,
+    access_token: process.env.ACCESS_TOKEN,
+    access_token_secret: process.env.ACCESS_TOKEN_SECRET
+});
+
+twitter.get('users/show'), {
+    screen_name: 'b_lw'
+}).then((user) => {
+    return twitter.post('friendships/create', {
+        user_id: user.id_str
+    });
+}).then(() => {
+	return twitter.upload({
+	    media_path: 'content/video.mp4'
+    });
+}).then((media_data) => {
+    return twitter.post('statuses/update', {
+	    status: 'Hello world',
+	    media_ids: media_data.media_id_string
+    });
+}).catch((err) => {
+    console.log(err);
+});
+```
+
 -------
 
 

@@ -1,5 +1,5 @@
 {
-	"name": "twttr-api",
+	"name": "twitter-api-suite",
 	"version": "0.0.1",
 	"description": "Twitter API client for Node.js",
 	"main": "index.js",
