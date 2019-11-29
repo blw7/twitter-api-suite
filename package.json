@@ -1,6 +1,6 @@
 {
 	"name": "twitter-api-suite",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Twitter API client for Node.js",
 	"main": "index.js",
 	"repository": {
