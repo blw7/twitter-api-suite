@@ -98,7 +98,7 @@ Implements the full logic (INIT, APPEND, FINALIZE, STATUS) of uploading media fi
 
 ```javascript
 const params = {
-    media_path: 'absolute/path/to/file.mp4'
+    media_path: 'path/to/file.mp4'
 }
 ```
 
@@ -110,7 +110,7 @@ Supported types and limits:
 
 # Examples
 
-Every method returns a chainable promise.
+Every method returns a chainable Promise.
 
 ```javascript
 const Twitter = require('twitter-api-suite');
@@ -122,7 +122,7 @@ const twitter = new Twitter({
     access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
 
-twitter.get('users/show'), {
+twitter.get('users/show', {
     screen_name: 'b_lw'
 }).then((user) => {
     return twitter.post('friendships/create', {
@@ -130,13 +130,15 @@ twitter.get('users/show'), {
     });
 }).then(() => {
     return twitter.upload({
-        media_path: 'content/video.mp4'
+        media_path: 'video.mp4'
     });
 }).then((media_data) => {
     return twitter.post('statuses/update', {
         status: 'Hello world',
         media_ids: media_data.media_id_string
     });
+}).then((tweet_data) => {
+    console.log('Tweet ID', tweet_data.id_str);
 }).catch((err) => {
     console.log(err);
 });
