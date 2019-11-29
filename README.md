@@ -108,7 +108,7 @@ Supported types and limits:
 * **GIF**: 15MB (.gif)
 
 
-## Example
+# Examples
 
 Every method returns a chainable promise.
 
@@ -129,13 +129,13 @@ twitter.get('users/show'), {
         user_id: user.id_str
     });
 }).then(() => {
-	return twitter.upload({
-	    media_path: 'content/video.mp4'
+    return twitter.upload({
+        media_path: 'content/video.mp4'
     });
 }).then((media_data) => {
     return twitter.post('statuses/update', {
-	    status: 'Hello world',
-	    media_ids: media_data.media_id_string
+        status: 'Hello world',
+        media_ids: media_data.media_id_string
     });
 }).catch((err) => {
     console.log(err);
